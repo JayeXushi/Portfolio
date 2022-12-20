@@ -1,0 +1,179 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+/* Typography */
+body {
+  font-family: "Helvetica Neue", Helvetica, Tahoma, sans-serif;
+  font-size: 0.9375em;
+  line-height: 1.65em;
+  margin: 0;
+  padding: 0;
+}
+a:focus,
+a:hover {
+  color: #de2c3b;
+}
+/* unit */
+.unit-50 {
+  width: 50%;
+}
+.units-row .unit-50{
+  float: left;
+  margin-left: 3%;
+}
+.units-row .unit-50:first-child{
+  margin-left: 0;
+}
+.units-row .unit-50 {
+  width: 48.5%;
+}
+.unit-push-50{
+  position: relative;
+}
+/* NavBar */
+.navbar {
+  font-size: 105%;
+  margin-bottom: 1.65em;
+}
+.navbar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar.navbar-left {
+  float: left;
+}
+.navbar.navbar-right {
+  float: right;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+}
+.navbar ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar li {
+  float: left;
+  margin-right: 1.65em;
+}
+.navbar.navbar-right li {
+  margin-right: 0;
+  margin-left: 1.65em;
+}
+.navbar a,
+.navbar span {
+  display: block;
+  text-decoration: none;
+}
+.navbar a:hover {
+  color: #de2c3b;
+  text-decoration: underline;
+}
+.navbar li.active a,
+.navbar span {
+  text-decoration: none;
+  cursor: text;
+  color: rgba(0, 0, 0, 0.4);
+}
+.navigation-toggle {
+  display: none;
+  text-transform: uppercase;
+  position: relative;
+  color: #0f0f0f;
+  background-color: #ffffff;
+}
+.navigation-toggle:after {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  margin-top: -12px;
+  left: 10px;
+  content: "\2630";
+  font-size: 24px;
+  line-height: 1;
+}
+.navigation-toggle.navigation-toggle-black {
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+.navigation-toggle.navigation-toggle-show {
+  margin-bottom: 1.65em;
+}
+.navigation-toggle span {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  display: block;
+  padding: 10px 20px 10px 40px;
+}
+.navigation-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2.25em;
+    line-height: 1.25;
+  }
+  h2 {
+    font-size: 1.5em;
+    line-height: 1.15384615;
+  }
+  ul,
+  ol,
+  ul ul,
+  ol ol,
+  ul ol,
+  ol ul {
+    margin-left: 1.65em;
+  }
+}
+/* Navigation Responsive */
+@media only screen and (max-width: 767px) {
+  .navbar.navbar-left,
+  .navbar.navbar-right,
+  .navbar li,
+  .navbar.navbar-left li,
+  .navbar.navbar-right li {
+    float: none;
+    text-align: left;
+    width: auto;
+  }
+  .navbar li,
+  .navbar.navbar-right li {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .fullwidth ul,
+  .fullwidth li {
+    width: auto;
+  }
+  .fullwidth li {
+    display: block;
+  }
+}
